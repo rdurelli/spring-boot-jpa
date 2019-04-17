@@ -29,16 +29,4 @@ public class ClienteResource {
     }
 
 
-
-
-    @RequestMapping(method = RequestMethod.POST, value = "/save", consumes = MediaType.APPLICATION_XML_VALUE)
-    public String testeXML (@RequestBody Ns3ECReports s) {
-
-        System.out.println("O xml is " + s.getNs2_gtiReportId());
-
-        System.out.println("O xml is " + s.getNs2_gtiTenantId());
-
-
-        return "ola " + s;
-    }
 }
